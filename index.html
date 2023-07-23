@@ -13,6 +13,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/7d915e28d5.js" crossorigin="anonymous"></script>
+
     <!-- tailwind customization config -->
     <script>
         tailwind.config = {
@@ -32,16 +35,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-        <!-- css font config -->
-        <style>
-            .font-manrope {
-                font-family: 'Manrope', sans-serif;
-            }
-        </style>
+    <!-- css font config -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body class="font-manrope">
-    <header>
 
+<body class="font-manrope">
+    <header class="container mx-auto my-10">
+        <div class="hero">
+            <div class="hero-content flex flex-col lg:flex-row">
+                <div>
+                    <h1 class="text-7xl font-extrabold">It's good <br>
+                        tea time at The <br> Tea House</h1>
+                    <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+                <div>
+                    <img src="./images/banner.png" class="max-w-sm w-full" />
+
+                    <!-- rating badge -->
+
+                    <div class="flex gap-5 items-center bg-white drop-shadow w-64 -mt-20">
+                        <div>
+                            <i class="fa-solid fa-star text-5xl text-amber-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-3xl font-extrabold">5.00</h3>
+                            <p class="text-xl font-semibold text-slate-500">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </header>
     <main>
 
