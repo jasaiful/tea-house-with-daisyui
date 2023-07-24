@@ -22,7 +22,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
                     }
                 }
             }
@@ -44,18 +45,19 @@
 </head>
 
 <body class="font-manrope">
-    <header class="container mx-auto my-10">
-        <div class="hero">
-            <div class="hero-content flex flex-col lg:flex-row">
+    <header class="container mx-auto my-20">
+        <div class="px-5">
+            <div class="flex justify-between items-center flex-col lg:flex-row">
                 <div>
                     <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold">It's good <br>
                         tea time at The <br> Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Explore More <i
+                            class="fa-solid fa-arrow-trend-up"></i></button>
                 </div>
                 <div>
-                    <img src="./images/banner.png" class="max-w-sm w-full" />
+                    <img src="./images/banner.png" class="" />
 
                     <!-- rating badge -->
 
@@ -155,14 +157,15 @@
 
         <!-- super client section  -->
         <section
-            class="flex flex-col lg:flex-row gap-12 my-24 px-16 py-24 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00]">
+            class="flex flex-col lg:flex-row gap-12 my-24 px-16 py-24 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end">
             <div class="flex items-center lg:pr-28">
                 <div class="text-white space-y-5">
                     <h2 class="text-5xl font-extrabold">Meet Our Super <br> Clients</h2>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even slightly
                         believable. </p>
-                    <button class="btn btn-primary">Show All</button>
+                    <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Show
+                        All</button>
                 </div>
 
             </div>
@@ -216,12 +219,117 @@
 
                 </div>
 
-
             </div>
 
         </section>
+
+        <!-- news section -->
+        <section class="container mx-auto my-20">
+            <!-- title section -->
+            <div class="text-center">
+                <h2 class="text-5xl font-extrabold mb-5">
+                    News & Events
+                </h2>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, <br> by injected humour, or randomised words which don't look even slightly
+                    believable.
+                </p>
+            </div>
+            <!-- card container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-8">
+                <!-- card-1 -->
+                <div class="card bg-base-100 border rounded-xl p-4">
+                    <figure><img src="./images/news-1.png" alt="tea" /></figure>
+                    <div class="card-body">
+                        <p>Feb 05, 2027</p>
+                        <h2 class="card-title text-xl font-extrabold">Collecting 8 points for discount</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <h6 class="font-bold">Learn More</h6>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div class="card bg-base-100 border rounded-xl p-4">
+                    <figure><img src="./images/news-2.png" alt="tea" /></figure>
+                    <div class="card-body">
+                        <p>Feb 05, 2027</p>
+                        <h2 class="card-title text-xl font-extrabold">Collecting 8 points for discount</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <h6 class="font-bold">Learn More</h6>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div class="card bg-base-100 border rounded-xl p-4">
+                    <figure><img src="./images/news-3.png" alt="tea" /></figure>
+                    <div class="card-body">
+                        <p>Feb 05, 2027</p>
+                        <h2 class="card-title text-xl font-extrabold">Collecting 8 points for discount</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                        <h6 class="font-bold">Learn More</h6>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </section>
+
     </main>
-    <footer>
+
+    <!-- footer -->
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24">
+            <img src="./images/cup.png" alt="">
+            <p>
+                <span class="mr-5">Ready to get started?</span>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white">Get Started</button>
+            </p>
+        </div>
+
+        <div class="footer">
+            <div>
+                <span class="footer-title">Services</span>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </div>
+            <div>
+                <span class="footer-title">Company</span>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </div>
+            <div>
+                <span class="footer-title">Legal</span>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </div>
+            <div>
+                <span class="footer-title">Newsletter</span>
+                <div class="form-control w-80">
+                    <label class="label">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input type="text" placeholder="username@site.com"
+                            class="py-4 bg-transparent border-b-2 border-black outline-none" />
+                        <button
+                            class="btn bg-gradient-to-r from-gradient-start to-gradient-end absolute top-0 right-0 rounded-full"><i
+                                class="fa-solid fa-chevron-right text-white"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-10 text-center">
+            <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        </div>
 
     </footer>
 
